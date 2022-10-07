@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  tools:context=".MainActivity">
+
+  <EditText
+    android:id="@+id/editTextInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Valami szöveg, bármi!"
+    android:textAlignment="center"
+    android:textSize="20sp" />
+
+  <Button
+    android:id="@+id/buttonSubmitUpperCase"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextInput"
+    android:layout_centerHorizontal="true"
+    android:text="NAGY BETŰS SZÖVEG" />
+
+  <Button
+    android:id="@+id/buttonSubmitLowerCase"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/buttonSubmitUpperCase"
+    android:layout_centerHorizontal="true"
+    android:text="KIS BETŰS SZÖVEG" />
+
+  <Button
+    android:id="@+id/buttonSubmitRandomColor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/buttonSubmitLowerCase"
+    android:layout_centerHorizontal="true"
+    android:text="VÉLETLEN SZÍN GENERÁLÁS" />
+
+  <TextView
+    android:id="@+id/textViewResult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/buttonSubmitRandomColor"
+    android:textSize="30sp" />
+
+</RelativeLayout>
